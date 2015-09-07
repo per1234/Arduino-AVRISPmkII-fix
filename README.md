@@ -6,7 +6,7 @@ An ugly temporary fix for [Arduino/#2986](https://github.com/arduino/Arduino/iss
 This fix adds an **AVRISP mkII Burn Bootloader** option to **Tools>Programmer**. This programmer option causes the **erase** and **bootloader** steps to be done in the first avrdude command so burning the bootloader is accomplished successfully even though the second avrdude command fails.
 
 #### Comparison With Alternative Fix
-Another fix has been presented in the Arduino Forum by dmjlambert: forum.arduino.cc/index.php?topic=345838 here is a comparison of Arduino-AVRISPmkII-fix vs the dmjlambert fix:
+Another fix has been presented in the Arduino Forum by dmjlambert: http://forum.arduino.cc/index.php?topic=345838 here is a comparison of Arduino-AVRISPmkII-fix vs the dmjlambert fix:
 ##### Pros
 - Doesn't require modification of any Arduino or other hardware core files
 - Doesn't need to be redone anytime the Arduino IDE or any hardware core is updated
@@ -31,7 +31,7 @@ This installation method requires Arduino IDE version 1.6.4 or greater.
 - After installation is complete close the Boards Manager window.
 
 ##### Manual Installation
-- Download the Arduino-AVRISPmkII-fix files here: https://github.com/per1234/Arduino-AVRISPmkII-fix/master.zip
+- Download the Arduino-AVRISPmkII-fix files here: https://github.com/per1234/Arduino-AVRISPmkII-fix/archive/master.zip
 - Extract the .zip file
 - Copy the extracted folder inside your sketchbook/hardware folder.
 - If the Arduino IDE is running then restart it.
