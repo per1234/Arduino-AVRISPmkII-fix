@@ -1,6 +1,0 @@
-avrispmkiifix.name=AVRISP mkII Burn Bootloader
-avrispmkiifix.communication=usb
-avrispmkiifix.protocol=stk500v2
-avrispmkiifix.program.protocol=stk500v2
-avrispmkiifix.program.tool=avrdude
-avrispmkiifix.program.extra_params=-Pusb "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i" -Ulock:w:{bootloader.lock_bits}:m

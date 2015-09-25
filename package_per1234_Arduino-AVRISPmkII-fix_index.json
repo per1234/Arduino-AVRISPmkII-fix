@@ -17,10 +17,33 @@
           "help": {
             "online": ""
           },
-          "url": "https://github.com/per1234/Arduino-AVRISPmkII-fix/releases/download/v1.0.0/Arduino-AVRISPmkII-fix_1.0.0.zip",
+          "url": "https://per1234.github.io/Arduino-AVRISPmkII-fix/Arduino-AVRISPmkII-fix_1.0.1.zip",
           "archiveFileName": "Arduino-AVRISPmkII-fix_1.0.0.zip",
           "checksum": "SHA-256:15f8bbd00bd46153b03c4c55b8d100c6729adb9ed8dfeefa7bd464663e504ecf",
           "size": "1965",
+          "boards": [
+            {"name": "AVRISP mkII Burn Bootloader"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
+        },
+        {
+          "name": "Arduino-AVRISPmkII-fix",
+          "architecture": "avr",
+          "version": "1.0.1",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://per1234.github.io/Arduino-AVRISPmkII-fix/Arduino-AVRISPmkII-fix_1.0.1.zip",
+          "archiveFileName": "Arduino-AVRISPmkII-fix_1.0.1.zip",
+          "checksum": "SHA-256:68725f13f39d03e992a21c1cfc5ded3e9b96e1d12a79bf81ba7485b86ad82e8e",
+          "size": "2391",
           "boards": [
             {"name": "AVRISP mkII Burn Bootloader"}
           ],
