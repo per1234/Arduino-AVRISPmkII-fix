@@ -28,6 +28,7 @@ This installation method requires Arduino IDE version 1.6.4 or greater.
 - Scroll down until you see the **Arduino-AVRISPmkII-fix** entry and click on it.
 - Click Install.
 - After installation is complete close the Boards Manager window.
+- If using Arduino IDE previous to v1.6.6 you may need to restart the IDE to make the **AVRISP mkII(fix)** programmer appear in the **Tools>Programmer** menu.
 
 ##### Manual Installation
 - Download the Arduino-AVRISPmkII-fix files here: https://github.com/per1234/Arduino-AVRISPmkII-fix/archive/master.zip
