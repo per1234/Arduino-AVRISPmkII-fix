@@ -1,7 +1,7 @@
 Arduino-AVRISPmkII-fix
 ==========
 
-An ugly temporary fix for [Arduino/#2986](https://github.com/arduino/Arduino/issues/2986). Some people are getting the error message: `avrdude: usbdev_open(): did not find any USB device "usb"` when trying to **Burn Bootloader** using the **AVRISP mkII** programmer under [Arduino](http://arduino.cc) IDE 1.6.x. The problem is that the two avrdude commands are sent without enough delay between them.
+A workaround for [Arduino/#2986](https://github.com/arduino/Arduino/issues/2986). Some people are getting the error message: `avrdude: usbdev_open(): did not find any USB device "usb"` when trying to **Burn Bootloader** using the **AVRISP mkII** programmer under [Arduino](http://arduino.cc) IDE 1.6.x. The problem is that the two avrdude commands are sent without enough delay between them.
 
 This fix adds an **AVRISP mkII Burn Bootloader** option to **Tools>Programmer**. This programmer option causes the **erase** and **bootloader** steps to be done in the first avrdude command so burning the bootloader is accomplished successfully even though the second avrdude command fails.
 
@@ -9,12 +9,11 @@ This fix adds an **AVRISP mkII Burn Bootloader** option to **Tools>Programmer**.
 Another fix has been presented in the Arduino Forum by dmjlambert: http://forum.arduino.cc/index.php?topic=345838 here is a comparison of Arduino-AVRISPmkII-fix vs the dmjlambert fix:
 ##### Pros
 - Doesn't require modification of any Arduino or other hardware core files
-- Doesn't need to be redone anytime the Arduino IDE or any hardware core is updated
+- Doesn't need to be redone every time the Arduino IDE or any hardware core with a platform.txt is updated
 - Doesn't affect any programmer except for AVRISP mkII
 
 ##### Cons
 - Burn Bootloader appears to fail even when successful
-- You need to use the standard AVRISP mkII programmer option for Upload Using Programmer
 
 
 #### Installation
@@ -40,10 +39,7 @@ This installation method requires Arduino IDE version 1.6.4 or greater.
 #### Usage
 ##### Burn Bootloader
 - Connect the AVRISP mkII to your Arduino
-- Select **Tools>Programmer>AVRISP mkII Burn Bootloader**
+- Select **Tools>Programmer>AVRISP mkII(fix)**
 - Select the correct board from **Tools>Board**
 - Click **Tools>Burn Bootloader**
 - The bootloader will be burned to your Arduino but then the avrdude output will fail with the error message `avrdude: usbdev_open(): did not find any USB device "usb"`. This is because the second avrdude command failed as it will do with **Tools>Programmer>AVRISP mkII**, however if you examine the avrdude output fully you will see that the first command was successful and the bootloader was burned in that command.
-
-##### Upload Using Programmer
-Use **Tools>Programmer>AVRISP mkII** for **Upload Using Programmer**. If you use **Tools>Programmer>AVRISP mkII Burn Bootloader** it will burn the bootloader as well as uploading your sketch which is not the expected action.

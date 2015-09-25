@@ -1,4 +1,4 @@
-avrispmkiifix.name=AVRISP mkII Burn Bootloader
+avrispmkiifix.name=AVRISP mkII(fix)
 avrispmkiifix.communication=usb
 avrispmkiifix.protocol=stk500v2
 avrispmkiifix.program.protocol=stk500v2

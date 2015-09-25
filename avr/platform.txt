@@ -1,0 +1,14 @@
+# This file is used for Upload Using Programmer. The platform.txt associated with the selected board is used for Burn Bootloader.
+
+tools.avrdude.path={runtime.tools.avrdude.path}
+tools.avrdude.cmd.path={path}/bin/avrdude
+tools.avrdude.config.path={path}/etc/avrdude.conf
+
+tools.avrdude.upload.params.verbose=-v
+tools.avrdude.upload.params.quiet=-q -q
+tools.avrdude.upload.pattern="{cmd.path}" "-C{config.path}" {upload.verbose} -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D "-Uflash:w:{build.path}/{build.project_name}.hex:i"
+
+tools.avrdude.program.params.verbose=-v
+tools.avrdude.program.params.quiet=-q -q
+# {program.extra_params} replaced with -Pusb in the following line so that Upload Using Programmer will work correctly
+tools.avrdude.program.pattern="{cmd.path}" "-C{config.path}" {program.verbose} -p{build.mcu} -c{protocol} -Pusb "-Uflash:w:{build.path}/{build.project_name}.hex:i"
