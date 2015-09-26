@@ -1,4 +1,4 @@
-avrispmkiifix.name=AVRISP mkII(fix)
+avrispmkiifix.name=AVRISP mkII(workaround)
 avrispmkiifix.communication=usb
 avrispmkiifix.protocol=stk500v2
 avrispmkiifix.program.protocol=stk500v2
