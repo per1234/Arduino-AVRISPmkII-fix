@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Arduino-AVRISPmkII-fix",
+          "name": "Arduino-AVRISPmkII-workaround",
           "architecture": "avr",
           "version": "1.0.0",
           "category": "Contributed",
@@ -33,7 +33,7 @@
           ]
         },
         {
-          "name": "Arduino-AVRISPmkII-fix",
+          "name": "Arduino-AVRISPmkII-workaround",
           "architecture": "avr",
           "version": "1.0.1",
           "category": "Contributed",
@@ -45,7 +45,30 @@
           "checksum": "SHA-256:68725f13f39d03e992a21c1cfc5ded3e9b96e1d12a79bf81ba7485b86ad82e8e",
           "size": "2391",
           "boards": [
-            {"name": "AVRISP mkII Burn Bootloader"}
+            {"name": "AVRISP mkII"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
+        },
+        {
+          "name": "Arduino-AVRISPmkII-workaround",
+          "architecture": "avr",
+          "version": "1.0.2",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://per1234.github.io/Arduino-AVRISPmkII-fix/Arduino-AVRISPmkII-workaround_1.0.2.zip",
+          "archiveFileName": "Arduino-AVRISPmkII-workaround_1.0.2.zip",
+          "checksum": "SHA-256:e1da98dfbe73c1ecc5b13caa60c57ea9d0d4f029a6fbc500003d88f116724fa2",
+          "size": "2462",
+          "boards": [
+            {"name": "AVRISP mkII(workaround)"}
           ],
           "toolsDependencies": [
             {
