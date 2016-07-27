@@ -24,13 +24,7 @@
           "boards": [
             {"name": "AVRISP mkII Burn Bootloader"}
           ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.0.1-arduino5"
-            }
-          ]
+          "toolsDependencies": []
         },
         {
           "name": "Arduino-AVRISPmkII-workaround",
@@ -47,13 +41,7 @@
           "boards": [
             {"name": "AVRISP mkII"}
           ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.0.1-arduino5"
-            }
-          ]
+          "toolsDependencies": []
         },
         {
           "name": "Arduino-AVRISPmkII-workaround",
@@ -70,13 +58,7 @@
           "boards": [
             {"name": "AVRISP mkII(workaround)"}
           ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.0.1-arduino5"
-            }
-          ]
+          "toolsDependencies": []
         }
       ],
       "tools": []
