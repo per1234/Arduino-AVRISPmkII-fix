@@ -45,3 +45,7 @@ This installation method requires Arduino IDE version 1.6.4 or greater.
 - Select the correct board from **Tools > Board**.
 - Click **Tools > Burn Bootloader**.
 - The bootloader will be burned to your Arduino but then the avrdude output will fail with the error message `avrdude: usbdev_open(): did not find any USB device "usb"`. This is because the second avrdude command failed as it will do with **Tools > Programmer > AVRISP mkII**, however if you enable **File > Preferences > Show verbose output during: upload**(check) and examine the avrdude output fully you will see that the first command was successful and the bootloader was burned in that command.
+
+
+#### Contributing
+Pull requests or issue reports are welcome! Please see the [contribution rules](https://github.com/per1234/Arduino-AVRISPmkII-fix/blob/master/CONTRIBUTING.md) for instructions.
