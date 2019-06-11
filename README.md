@@ -48,4 +48,4 @@ This installation method requires Arduino IDE version 1.6.4 or greater.
 
 
 #### Contributing
-Pull requests or issue reports are welcome! Please see the [contribution rules](https://github.com/per1234/Arduino-AVRISPmkII-fix/blob/master/CONTRIBUTING.md) for instructions.
+Pull requests or issue reports are welcome! Please see the [contribution rules](https://github.com/per1234/Arduino-AVRISPmkII-fix/blob/master/.github/CONTRIBUTING.md) for instructions.
