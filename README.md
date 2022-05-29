@@ -14,7 +14,12 @@ You can download Arduino IDE 1.8.12 from this page if needed:
 https://www.arduino.cc/en/software/OldSoftwareReleases#arduino-18x
 
 #### Comparison With Alternative **Workaround**
-Another **workaround** has been presented in the Arduino Forum by dmjlambert: http://forum.arduino.cc/index.php?topic=345838 here is a comparison of Arduino-AVRISPmkII-workaround vs the dmjlambert **workaround**:
+Another **workaround** has been presented in the Arduino Forum by dmjlambert:
+
+https://forum.arduino.cc/t/solved-bootloader-from-arudino-ide-with-avrispmkii-fails/333367
+
+Here is a comparison of Arduino-AVRISPmkII-workaround vs the dmjlambert **workaround**:
+
 ##### Pros
 - Doesn't require modification of any Arduino or other hardware core files.
 - Doesn't need to be redone every time the Arduino IDE or any hardware core with a platform.txt is updated.
