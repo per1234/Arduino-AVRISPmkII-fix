@@ -5,6 +5,14 @@ A **workaround** for [Arduino/#2986](https://github.com/arduino/Arduino/issues/2
 
 This **workaround** adds an **AVRISP mkII Burn Bootloader** option to **Tools > Programmer**. This programmer option causes the **erase** and **bootloader** steps to be done in the first avrdude command so burning the bootloader is accomplished successfully even though the second avrdude command fails as usual.
 
+#### Compatibility
+
+❗ This project is only compatible with Arduino IDE 1.8.12 and older. The support for distributing standalone custom programmer configurations via Arduino boards platforms utilized by this project was lost in Arduino IDE 1.8.13.
+
+You can download Arduino IDE 1.8.12 from this page if needed:
+
+https://www.arduino.cc/en/software/OldSoftwareReleases#arduino-18x
+
 #### Comparison With Alternative **Workaround**
 Another **workaround** has been presented in the Arduino Forum by dmjlambert: http://forum.arduino.cc/index.php?topic=345838 here is a comparison of Arduino-AVRISPmkII-workaround vs the dmjlambert **workaround**:
 ##### Pros
